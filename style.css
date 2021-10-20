@@ -40,6 +40,8 @@ nav{
     color: var(--Gray);
     flex: 1.5;
     justify-content: space-around;
+    transition: 0.3s ease-in;
+   
 }
 .nav-link{
     display: flex;
@@ -292,7 +294,7 @@ nav{
     align-items: center;
     margin-top: 50px;
 }
-@media (max-width: 800px){
+@media (max-width: 920px){
     .menu-btn{
         display: block;
         z-index: 999;
@@ -314,6 +316,7 @@ nav{
         display: flex;
         flex-direction: column;
         align-items: center;
+        transition: 0.3s ease-in;
     }
     .nav-links ul.active{
         left: -100%;
@@ -397,6 +400,10 @@ nav{
         height: 25vh;
         border-radius: 10px;
     }
+    .stats-card{
+        gap: 40px;
+        align-items: start;
+    }
     .results div{
         display: flex;
         flex-direction: column;
@@ -411,6 +418,14 @@ nav{
     .results button{
         width: 90%;
         border-radius: 10px;
+    }
+    /* Footer Responsiveness */
+    .footer-bottom{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        justify-content: space-between;
+        text-align: center;
     }
 
 }
